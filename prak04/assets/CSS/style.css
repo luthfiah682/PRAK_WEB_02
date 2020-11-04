@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat" sans-serif;
+    background-color: #c8d9eb;
+  }
+
+  
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    height: 20px;
+    background-color: #112d4e;
+  }
+  
+  nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    position: relative;
+    font-size: 14px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #dbe2ef;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 7px 0;
+    transition: 0.5s all;
+  }
+  
+  nav ul li a:hover {
+    color: #00e0f0;
+  }
+  
+  nav ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00d8f0;
+    border-radius: 2px;
+    transition: 0.4s all;
+  }
+  
+  nav ul li a:hover:before {
+    width: 30px;
+  }
+  
+  /* Jumbotron */
+  .jumbotron {
+    width: 100%;
+    margin-top: 60px;
+    background-image: url(../gambar/b.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+  }
+  
+  .jDeskripsi {
+    font-size: 40px;
+    padding: 120px 100px 0 100px;
+    color: #f5f5f5;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  
+  span {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .jumbotron .order {
+    margin-top: 20px;
+  }
+  
+  .jumbotron .order a {
+    text-decoration: none;
+    color: #f5f5f5;
+  }
+  
+  .btn {
+    padding: 7px 20px;
+    transition: 0.4s all;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  
+  .btn.btn-outline {
+    border: 2px solid #112d4e;
+    background-color: #112d4e;
+  }
+  .btn.btn-outline:hover {
+    box-shadow: 5px 5px 12px #112d4e;
+  }
+  .judul {
+    text-align: -webkit-center;
+    display: block;
+    padding: 40px;
+  }
+  .judul h2 {
+    font-size: 27px;
+    text-decoration: black;
+    letter-spacing: 0.5px;
+    font-family: monospace;
+    font-weight: 600;
+  }
+  .p {
+    line-height: normal;
+    padding: 0.5em;
+    font-size: 14px;
+    color: #52616b;
+    margin-top: -10px;
+  }
+  /* Tentang Kami */
+.tentang {
+    padding: 20px;
+  }
+  
+.artikel p {
+    text-align: center;
+    padding: 0 100px 0 100px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #52616b;
+    padding-bottom: 50px;
+  }
+  /* Paket */
+.paket {
+    padding: 20px;
+  }
+  
+  .paket .artikel {
+    padding-bottom: 50px;
+  }
+  
+  .artikel table {
+    font-family: sans-serif;
+    color: #232323;
+    border-collapse: collapse;
+  }
+  
+  .artikel table th {
+    padding: 15px 0;
+    background-color: #00e0f0;
+    color: black ;
+  }
+  
+  .artikel table,
+  th,
+  td {
+    border: 3px solid #393e46;
+    padding: 0 15px;
+    text-align: center;
+    color: #52616b;
+  }
+  
+
+  /* Cabang */
+.cabang {
+    padding: 20px;
+  }
+  
+  .artikel .cabang {
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .artikel .cabang img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 20px 20px 20px;
+    border-radius: 50px 50px 50px 5px;
+    border: 3px #364f6b solid;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+  
+  .artikel .cabang h4 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #52616b;
+  }
+
+
+    /* Footer */
+footer {
+    padding: 21px 0;
+    background-color: #112d4e;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .float-left {
+    padding-left: 20px;
+    float: left;
+  }
+  
+  footer .float-right {
+    padding-right: 20px;
+    float: right;
+  }
+  
+  footer p {
+    font-size: 16px;
+    color: #f5f5f5;
+    font-family: "Poppins-Medium";
+  }
+  
+  footer p a {
+    text-decoration: none;
+    color: #f5f5f5;
+  }
